@@ -1,0 +1,56 @@
+dir/ls - traz uma lista de diretórios contido na pasta que está situada
+cd(change director) - possibilita a navegação entre as pastas
+cd / - vai para o disco C
+cd .. - para retroceder uma pasta
+control L/cls/clear(clear screen) - limpa a tela
+TAB - completa o que vc começou a escrever
+mkdir(make directory) - cria uma pasta
+echo - printa na tela o que estiver escrito em seguida
+> - redirecionador de fluxo
+del - deleta arquivos da pasta
+setinha pra cima - pega comandos já usados anteriormente
+rmdir /S /Q (remove directory) - apaga a pasta e tudo dentro 
+pwd - mostra o caminho completo
+git init - inicia o git em determinada pasta(inicia o repositório
+ls -a - mostra arquivos ocultos
+git config --global user.email "arjunapinto@gmail.com" - configura o email padrão de uso nos projetos
+git config --global user.name Arjuna - configura o nome que vai aparecer nos projetos
+git status - mostra o estado, dizendo se está untracked, modified ou em stage 
+mv arquivo ./nome do diretorio - move um qrquivo pro respositorio escolhido
+git add NOME_DO_ARQUIVO - adicionam os arquivos pro modo staged
+git add * - adiciona tudo q foi modificado para o modo staged para poder commitar
+git commit -m "nome da nova atualização" - para commitar
+git remote -v - lista as listas de repositorios remotos que estão cadastrados
+git pull origin master - puxar as alterações feitas no repositório que não estão no meu computador
+
+
+GERAR CHAVE SSH
+
+ssh-keygen -t ed25519 -C arjunapinto@gmail.com
+da enter
+escreve a senha
+repita a senha
+cd /c/Users/arjun/.ssh
+cat id_ed25519.pub
+copiar o resultado e colar no github em ssh keys
+eval $(ssh-agent -s)
+ssh-add id_ed25519
+escreva a senha
+
+
+CLONAR UM ARQUIVO DO GITHUB
+
+copiar o link ssh/https do arquivo
+git clone 'LINK'
+yes
+
+
+CRIAR UM NOVO REPOSITORIO NO GITHUB
+
+ir no meu perfil
+seus repositorios
+new
+copiar o link do repositorio(https)
+git remote add origin LINK_DO_REPOSITORIO(o origin é apensa um ALIAS para facilitar e não ter que ficar reescrevendo o link toda hora)
+git push origin master
+
