@@ -1,0 +1,140 @@
+ID x CLASSE
+
+id="" - Representa qualquer tipo de elemento e só pode ser utilizado uma vez na página. No css é pressendido por um #
+class="" - Representa qualquer tipo de elemento e no css é pressendido por um .
+
+LINKANDO O ARQUIVO CSS AO HTML
+
+<link rel="stylesheet" href="">
+rel - diz ao navegador qual o tipo de arquivo que está sendo adicionado
+
+BOX MODEL
+
+O navegador divide a tela em um modelo de caixa com as seguintes regras:
+ -------MARGIN-------------------------
+|   _______________________________     | 
+|  |      BORDER                   |    |
+|  |  ---------------------------  |    |
+|  |  |      PADDING             | |    | 
+|  |  |  _______________________ | |    |
+|  |  | |     CONTENT           || |    |
+|  |  | |_______________________|| |    |
+|  |  |                          | |    |
+|  |  ---------------------------- |    |     
+|  |_______________________________|    |
+ ---------------------------------------
+MARGIN - Espaçamento entre elementos
+BORDER - Circundam o padding e o conteúdo e a gente consegue alterar a aparência delas como largura e cor
+PADDING - Espaçamento entre a borda e o conteúdo
+CONTENT - É o que o seu bloco representa, um texto, uma imagem ou um vídeo
+
+PADDING E MARGIN
+
+Se quisermos atribuir tamanhos diferentes para cada lado nós podemos:
+
+1° - padding: 10px 5px; Nesse exemplo o valor 10px se refere a parte superior e inferior
+                        Enquanto o valor 5px se refere aos lados direito e esquerdo
+
+2° - padding : 15px 10px 5px 0; Nesse exemplo se segue a ordem Topo/Direito/Inferior/Esquerdo
+                                Obs: quando se usa o valor 0 ele não precisa de unidade
+
+3° - padding-top: 15px; Nesse exemplo usa-se as propriedades específicas para cada lado,
+     padding-right: 10px; mais utilizado quando temos 3 lados iguais e somente 1 diferente
+     padding-bottom: 5px;
+     padding-left: 0;
+
+BACKGROUND
+
+Essas são 3 formas diferentes de mudar a cor do background
+
+background-color: green; 
+background-color: #008800
+background: #008000;
+
+BORDER
+
+A propriedade border pode ter 3 valores: largura(pixels,centímetros,milímetros...), cor(blue, #0000ff...) e estilo(sólida, pontilhada, tracejada...)
+
+border: 3px solid blue; Linha sólida/normal azul
+border-top: 2px dotted green; Linha pontilhada verde
+border-right: 4px dashed pink; Linha tracejada rosa
+
+Caso se deseje usar separadamente:
+
+border-width: 3px; Largura
+border-color: #505050; Cor
+border-style: solid; Estilo
+
+E ainda é possível ser mais específico ainda escolhendo um lado:
+
+border-top-width: 3px;
+border-top-color: blue;
+border-top-style: solid;
+
+BORDER-RADIUS
+
+Permite arredondar os cantos de um elemento
+
+border-radius: 10px;
+border-radius: 50%; Se você tem um elemento quadrado e quer transformar ele em um círculo, essa é a opção correta
+border-radius: 10% 20%;
+border-radius: 10% 20% 15% 22%; top/right/bot/left
+
+FONT
+
+font-family: Verdana; Altera a fonte do nosso texto e podemos usar fontes da web ou instaladas na nossa máquina
+font-family: Verdana, Arial; A segunda fonte serve de backup para caso a primeira não funcione
+
+font-size: 30px; Altera o tamanho do nosso texto
+
+font-style: normal; Altera a aparência do nosso texto
+font-style: italic;
+
+font-weight: normal; Altera o peso do texto
+font-weight: bold; Negrito
+
+Altera o texto entre maiúsculos e minúsculos
+text-transform: uppercase; Caixa Alta
+text-transform: lowercase; Caixa Baixa
+text-transform: capitalize; Todas as primeiras letras de cada palavra em maiúsculas
+
+Muito utilizado para dar destaque a algum texto, pois ele coloca linhas
+text-decoration: underline; Abaixo da palavra
+text-decoration: overline; Acima da palavra
+text-decoration: line-through; Meio da palavra, cortando ela
+
+LIST
+
+Usado para mudar os marcadores das listas
+ul {
+    list-style-type: none; Nenhum
+}
+
+ul {
+    list-style-type: square; Quadrado
+}
+
+ol {
+    list-style-type: upper-roman; Maiúsculo e Romano
+}
+
+ul {
+    list-style-type: "\1F44D"; Emoji de Joinha
+}
+
+Também é possível usar imagens como marcadores
+ul {
+    list-style-image: url("rocket.png");
+}
+
+DIMENSÃO E ALINHAMENTO
+
+Width - Largura(pixel, porcentagem)
+Height - Altura(pixel, porcentagem)
+
+Max-width - Maior largura possível
+Max-height - Maior altura possível
+
+Margin - Serve para alinhar elementos(auto)
+
+Text align - Serve para alinhar o texto(left, center, right) e é possível justificá-lo(justify)
