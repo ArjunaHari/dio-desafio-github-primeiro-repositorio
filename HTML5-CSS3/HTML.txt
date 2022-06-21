@@ -1,0 +1,49 @@
+ESTRUTURA BÁSICA
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta>
+        <title></title>
+    </head>
+    <body>
+    </body>
+</html>
+
+SEMÂNTICA
+
+<section> Representa uma seção genérica de conteúdos como uma lista de artigos
+<header> Pode ser o cabeçalho da sua página ou de parte de uma página,
+ pode ser o cabeçalho de uma section
+<article> Representa um conteúdo relevante dentro da sua página, como um artigo de um blog
+<aside> Representa um conteúdo relacionado ao conteúdo principal da página,
+como a biografia de um autor, links relacionados e normalmente representadop por uma barra lateral
+<footer> Pode ser o rodapé da página ou de parte de uma página, pode ser rodapé de um article/section
+<h1>-<h6> Representam a importância de um título dentro de uma página. O h1 pode ser o título da sua página,
+o h2 o título de uma section e o h3 o título de um article e assim por diante. Só pode ter um h1 por página
+
+TEXTOS
+
+<p> Utilizado para textos maiores e mais densos. O p representa um parágrafo, mas ele não suporta apenas
+texto, podemos adicionar imagens, códigos, vídeos e vários tipos de outros conteúdos nele
+
+LINKS
+
+<a> É uma âncora, ele interliga vários conteúdos na web
+<a href=""> É o hiperlink para onde sua âncora está apontando, podendo ser uma página do seu site ou uma página externa
+e pode apontar para emais(mailto:) e até telefones(tel:)
+<a target=""> Serve para indicar como esse link vai ser aberto
+<a target="_blank"> Abre nossa página em another aba
+
+IMAGENS
+
+<img> Elemento image sem tag de fechamento
+<img src=""> Obrigatório e guarda o caminho da imagem, podendo ser uma imagem dentro do seu site ou uma imgaem de outro lugar
+<img alt=""> Mesmo não sendo obrigatório ele é altamente recomendado para melhorar a acessibilidade,
+pois mostra a descrição da foto quando ela não é carregada e leitores de tela usam essa descrição para mostrar pro usuário o que essa iamgem significa
+
+LISTAS
+
+<ul> Representa uma lista em que a ordem dos itens não é importante
+<ol> A ordem dos itens é importante, portanto eles são representados por números, letras ou algarismos romanos
+<li> É um item dessa lista
