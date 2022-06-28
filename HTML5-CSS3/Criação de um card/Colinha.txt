@@ -1,0 +1,2 @@
+background-repeat : no-repeat; Serve para a imagem não se repetir na tela de fundo por causa da falta de tamanho para completar a tela inteira
+background-size: conver; Vai fazer com que a imagem cubra o card inteiro

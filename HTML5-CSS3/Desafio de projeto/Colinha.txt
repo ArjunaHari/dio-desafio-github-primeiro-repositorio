@@ -1,0 +1,4 @@
+Uma nova forma de criar div
+
+div.NOMEDADIV
+div.NOMEDADIV*3 - cria a mesma div o número de vezes que você desejar
