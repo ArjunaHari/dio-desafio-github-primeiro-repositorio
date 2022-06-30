@@ -1,0 +1,7 @@
+//(ctrl /) - Comenta a linha
+/* */ - comentário multilinha
+
+console.log() - faz ser possível aparecer no console
+node NOMEDOARQUIVO - executa o arquivo no console
+function(parâmetros) {} - criação de uma função, os parâmetros podem ter as variáveis
+NOMEDAFUNÇÃO(valores dos parâmetros); - chamando a função
